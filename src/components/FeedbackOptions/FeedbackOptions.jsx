@@ -6,10 +6,10 @@ export default function FeedbackOptions({ options, onLeaveFeedback }) {
     return (
         <Div>
             <FlexedBtn>
-                {options.map(btn => (
-                    <li key={btn}>
-                        <Button type="button" name={btn} onClick={onLeaveFeedback}>
-                            {btn}
+                {options.map(option => (
+                    <li key={option}>
+                        <Button type="button" name={option} onClick={onLeaveFeedback}>
+                            {option}
                         </Button>
                     </li>
                 ))}
